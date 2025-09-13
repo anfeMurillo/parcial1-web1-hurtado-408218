@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo"><img src="logo.png" alt="Logo" style="height:40px;"></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
+
+    <div class="page-container">
+        
+        <aside class="left-sidebar">
+            <div class="profile-intro">
+                <div class="profile-pic-placeholder"></div>
+                <h3>Nombre de Usuario</h3>
+                <p>Información breve sobre el usuario.</p>
+            </div>
+            <div class="friends-box">
+                <h4>Amigos</h4>
+                <div class="friends-grid">
+                    <div class="friend-placeholder"></div>
+                    <div class="friend-placeholder"></div>
+                    <div class="friend-placeholder"></div>
+                    <div class="friend-placeholder"></div>
+                    <div class="friend-placeholder"></div>
+                    <div class="friend-placeholder"></div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <nav class="profile-nav">
+                <ul>
+                    <li><a href="#muro" class="nav-link active">Muro</a></li>
+                    <li><a href="#info" class="nav-link">Info</a></li>
+                    <li><a href="#photos" class="nav-link">Photos</a></li>
+                    <li><a href="#boxes" class="nav-link">Boxes</a></li>
+                </ul>
+            </nav>
+
+            <div class="content-sections">
+                <section id="muro" class="content-section active">
+                    <div class="post-creator">
+                        <textarea placeholder="Pon algo aquí..."></textarea>
+                        <button>Compartir</button>
+                    </div>
+                    <div class="post">
+                        <p><strong>Nombre</strong> - Lunes a las 8:45pm</p>
+                        <p>Este es un ejemplo de una publicación en el muro. ¡Hola mundo!</p>
+                    </div>
+                    <div class="post">
+                        <p><strong>Nombre</strong> - Domingo a las 11:46pm</p>
+                        <p>Otra publicación para simular el feed de noticias.</p>
+                    </div>
+                </section>
+
+                <section id="info" class="content-section">
+                    <h2>Información</h2>
+                    <ul>
+                        <li><strong>Email:</strong> usuario@example.com</li>
+                        <li><strong>Teléfono:</strong> +123 456 7890</li>
+                        <li><strong>Intereses:</strong> Programación, diseño web, café.</li>
+                        <li><strong>Situación sentimental:</strong> Es complicado.</li>
+                    </ul>
+                </section>
+
+                <section id="photos" class="content-section">
+                    <h2>Fotos</h2>
+                    <div class="photo-grid">
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                        <div class="photo-placeholder"></div>
+                    </div>
+                </section>
+
+                <section id="boxes" class="content-section">
+                    <h2>Boxes</h2>
+                    <p>Esta es la sección de "Boxes". El contenido iría aquí.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

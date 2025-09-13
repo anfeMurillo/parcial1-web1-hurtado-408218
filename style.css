@@ -1,0 +1,157 @@
+/* Estilos generales y variables */
+:root {
+    --primary-color: #4267B2;
+    --background-color: #F0F2F5;
+    --white-color: #FFFFFF;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: #333;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-header .search-bar input {
+    width: 250px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Contenedor Principal con CSS Grid */
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; /* Dos columnas: sidebar y contenido */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Barra lateral izquierda */
+.left-sidebar .profile-intro,
+.left-sidebar .friends-box {
+    background-color: var(--white-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-pic-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.friend-placeholder {
+    width: 100%;
+    height: 60px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Contenido Principal */
+.main-content {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-nav li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Estilo para el link activo */
+.profile-nav li a.active {
+    border-bottom: 3px solid var(--primary-color);
+    color: #333;
+}
+
+/* Secciones de Contenido */
+.content-section {
+    display: none; /* Ocultar todas las secciones por defecto */
+}
+
+.content-section.active {
+    display: block; /* Mostrar solo la sección activa */
+}
+
+/* Estilos específicos de cada sección */
+/* Muro */
+.post-creator {
+    margin-bottom: 20px;
+}
+.post-creator textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+.post {
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Info */
+#info ul {
+    list-style: none;
+    padding: 0;
+}
+#info li {
+    padding: 8px 0;
+}
+
+/* Galería de Fotos con CSS Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.photo-placeholder {
+    width: 100%;
+    padding-top: 100%; /* Truco para mantener la relación de aspecto 1:1 */
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
