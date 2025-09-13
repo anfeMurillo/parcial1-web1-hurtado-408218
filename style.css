@@ -113,7 +113,6 @@ body {
     display: block; /* Mostrar solo la sección activa */
 }
 
-/* Estilos específicos de cada sección */
 /* Muro */
 .post-creator {
     margin-bottom: 20px;
@@ -142,7 +141,7 @@ body {
     padding: 8px 0;
 }
 
-/* Galería de Fotos con CSS Grid */
+
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -151,7 +150,57 @@ body {
 
 .photo-placeholder {
     width: 100%;
-    padding-top: 100%; /* Truco para mantener la relación de aspecto 1:1 */
+    padding-top: 100%;
     background-color: #e0e0e0;
     border-radius: 8px;
+}
+
+.boxes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Espacio entre las cajas */
+}
+
+.box {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.box h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: var(--primary-color);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.box ul li {
+    padding: 5px 0;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.box a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.box a:hover {
+    text-decoration: underline;
 }
